@@ -1,0 +1,20 @@
+[
+  { "keys": ["ctrl+1"], "command": "pastebin_insert", "args": { "index": 1 } },
+  { "keys": ["ctrl+2"], "command": "pastebin_insert", "args": { "index": 2 } },
+  { "keys": ["ctrl+3"], "command": "pastebin_insert", "args": { "index": 3 } },
+  { "keys": ["ctrl+4"], "command": "pastebin_insert", "args": { "index": 4 } },
+  { "keys": ["ctrl+5"], "command": "pastebin_insert", "args": { "index": 5 } },
+  { "keys": ["ctrl+6"], "command": "pastebin_insert", "args": { "index": 6 } },
+  { "keys": ["ctrl+7"], "command": "pastebin_insert", "args": { "index": 7 } },
+  { "keys": ["ctrl+8"], "command": "pastebin_insert", "args": { "index": 8 } },
+  { "keys": ["ctrl+9"], "command": "pastebin_insert", "args": { "index": 9 } },
+  { "keys": ["ctrl+c", "ctrl+1"], "command": "pastebin_create", "args": { "index": 1 } },
+  { "keys": ["ctrl+c", "ctrl+2"], "command": "pastebin_create", "args": { "index": 2 } },
+  { "keys": ["ctrl+c", "ctrl+3"], "command": "pastebin_create", "args": { "index": 3 } },
+  { "keys": ["ctrl+c", "ctrl+4"], "command": "pastebin_create", "args": { "index": 4 } },
+  { "keys": ["ctrl+c", "ctrl+5"], "command": "pastebin_create", "args": { "index": 5 } },
+  { "keys": ["ctrl+c", "ctrl+6"], "command": "pastebin_create", "args": { "index": 6 } },
+  { "keys": ["ctrl+c", "ctrl+7"], "command": "pastebin_create", "args": { "index": 7 } },
+  { "keys": ["ctrl+c", "ctrl+8"], "command": "pastebin_create", "args": { "index": 8 } },
+  { "keys": ["ctrl+c", "ctrl+9"], "command": "pastebin_create", "args": { "index": 9 } }
+]
