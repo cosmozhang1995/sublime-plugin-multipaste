@@ -10,6 +10,7 @@ class PastebinInsertCommand(sublime_plugin.TextCommand):
     counter = 0
     def run(self, edit, index):
         # insstr = self.view.settings().get("pastebin_string_%d" % index)
+        print(self.view.is_read_only())
         insstr = None
         try:
             with open(strings_filename, "r") as file:
