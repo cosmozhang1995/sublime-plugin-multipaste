@@ -1,4 +1,4 @@
-# Sublime Plugin - Pastebin
+# Sublime Plugin - Multi Paste
 
 With this plugin, you can hold up to 9 phrases in the same time and paste any one at any time.
 
