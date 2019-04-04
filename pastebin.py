@@ -10,7 +10,6 @@ class PastebinInsertCommand(sublime_plugin.TextCommand):
     counter = 0
     def run(self, edit, index):
         # insstr = self.view.settings().get("pastebin_string_%d" % index)
-        print(self.view.is_read_only())
         insstr = None
         try:
             with open(strings_filename, "r") as file:
@@ -20,9 +19,16 @@ class PastebinInsertCommand(sublime_plugin.TextCommand):
             pass
         if insstr:
             for sel in self.view.sel():
-                self.view.insert(edit, sel.a, insstr)
-        else:
-            print("no string to insert", pool)
+                if sel.empty():
+                    self.view.insert(edit, sel.begin(), insstr)
+                else:
+                    self.view.replace(edit, sel, insstr)
+            cursels = self.view.sel()
+            newsels = []
+            for sel in cursels:
+                newsels.append(sublime.Region(sel.end(), sel.end()))
+            self.view.sel().clear()
+            self.view.sel().add_all(newsels)
 
 class PastebinCreateCommand(sublime_plugin.TextCommand):
     counter = 0
